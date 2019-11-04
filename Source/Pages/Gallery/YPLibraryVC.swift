@@ -115,10 +115,10 @@ public class YPLibraryVC: UIViewController, YPPermissionCheckable {
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if mediaManager.hasChangedPhotoLibrary {
+//        if mediaManager.hasChangedPhotoLibrary {
             refreshMediaRequest()
-            mediaManager.hasChangedPhotoLibrary = false
-        }
+//            mediaManager.hasChangedPhotoLibrary = false
+//        }
     }
     
     public override func viewDidAppear(_ animated: Bool) {

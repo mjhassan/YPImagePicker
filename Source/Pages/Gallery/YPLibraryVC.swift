@@ -116,6 +116,9 @@ public class YPLibraryVC: UIViewController, YPPermissionCheckable {
         super.viewWillAppear(animated)
         
         if YPConfig.hasChangedPhotoLibrary {
+            currentlySelectedIndex = 0
+            selection.removeAll()
+            
             refreshMediaRequest()
             YPImagePickerConfiguration.shared.hasChangedPhotoLibrary = false
         }
@@ -279,8 +282,6 @@ public class YPLibraryVC: UIViewController, YPPermissionCheckable {
         } else {
             mediaManager.fetchResult = PHAsset.fetchAssets(with: options)
         }
-                
-        currentlySelectedIndex = 0
         
         if mediaManager.fetchResult.count > currentlySelectedIndex {
             changeAsset(mediaManager.fetchResult[currentlySelectedIndex])

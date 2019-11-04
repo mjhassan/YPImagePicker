@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08408F44237010F500F3384D /* YPImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08408F30236FE3EB00F3384D /* YPImagePicker.framework */; };
+		08408F45237010F500F3384D /* YPImagePicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08408F30236FE3EB00F3384D /* YPImagePicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		99428A0A1E7BE02400B765A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99428A091E7BE02400B765A9 /* AppDelegate.swift */; };
 		99428A0C1E7BE02400B765A9 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99428A0B1E7BE02400B765A9 /* ExampleViewController.swift */; };
 		99428A111E7BE02400B765A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99428A101E7BE02400B765A9 /* Assets.xcassets */; };
@@ -35,6 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				08408F45237010F500F3384D /* YPImagePicker.framework in Embed Frameworks */,
 				99CD962220D173FE009F5084 /* Stevia.framework in Embed Frameworks */,
 				99CD962120D173EB009F5084 /* PryntTrimmerView.framework in Embed Frameworks */,
 			);
@@ -73,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08408F44237010F500F3384D /* YPImagePicker.framework in Frameworks */,
 				997127C1208F45B30089272B /* PryntTrimmerView.framework in Frameworks */,
 				997A4CD21F4C3DC0009C3703 /* Stevia.framework in Frameworks */,
 			);

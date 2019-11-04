@@ -1,11 +1,13 @@
 "YPImagePickerAlbums" = "Albümler";
 "YPImagePickerCancel" = "İptal";
+"YPImagePickerMenu" = "Menü";
 "YPImagePickerCover" = "Kapak";
 "YPImagePickerCrop" = "Kırp";
 "YPImagePickerDone" = "Bitti";
 "YPImagePickerFilter" = "Filtrele";
 "YPImagePickerLibrary" = "Kütüphane";
 "YPImagePickerNext" = "İleri";
+"YPImagePickerEdit" = "Düzenle";
 "YPImagePickerOk" = "Bitti";
 "YPImagePickerPermissionDeniedPopupCancel" = "İptal";
 "YPImagePickerPermissionDeniedPopupGrantPermission" = "Erişime İzin Ver";

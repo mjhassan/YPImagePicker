@@ -1,11 +1,13 @@
 "YPImagePickerAlbums" = "アルバム";
 "YPImagePickerCancel" = "キャンセル";
+"YPImagePickerMenu" = "メニュー";
 "YPImagePickerCover" = "カバー";
 "YPImagePickerCrop" = "クロッピング";
 "YPImagePickerDone" = "完了";
 "YPImagePickerFilter" = "フィルター";
 "YPImagePickerLibrary" = "ライブラリ";
 "YPImagePickerNext" = "次へ";
+"YPImagePickerEdit" = "編集する";
 "YPImagePickerOk" = "OK";
 "YPImagePickerPermissionDeniedPopupCancel" = "キャンセル";
 "YPImagePickerPermissionDeniedPopupGrantPermission" = "設定画面へ";

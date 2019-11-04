@@ -1,11 +1,13 @@
 "YPImagePickerAlbums" = "相簿";
 "YPImagePickerCancel" = "取消";
+"YPImagePickerMenu" = "菜單";
 "YPImagePickerCover" = "封面";
 "YPImagePickerCrop" = "裁切";
 "YPImagePickerDone" = "完成";
 "YPImagePickerFilter" = "濾鏡";
 "YPImagePickerLibrary" = "相片圖庫";
 "YPImagePickerNext" = "下一步";
+"YPImagePickerEdit" = "編輯";
 "YPImagePickerOk" = "好";
 "YPImagePickerPermissionDeniedPopupCancel" = "取消";
 "YPImagePickerPermissionDeniedPopupGrantPermission" = "允許存取";

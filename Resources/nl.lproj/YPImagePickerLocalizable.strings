@@ -1,11 +1,13 @@
 "YPImagePickerAlbums" = "Albums"; //ignore-same-translation-warning
 "YPImagePickerCancel" = "Annuleer";
+"YPImagePickerMenu" = "Menu";
 "YPImagePickerCover" = "Omslag";
 "YPImagePickerCrop" = "Bijsnijden";
 "YPImagePickerDone" = "Klaar";
 "YPImagePickerFilter" = "Filter"; //ignore-same-translation-warning
 "YPImagePickerLibrary" = "Bibliotheek";
 "YPImagePickerNext" = "Volgende";
+"YPImagePickerEdit" = "Bewerk";
 "YPImagePickerOk" = "Gereed";
 "YPImagePickerPermissionDeniedPopupCancel" = "Annuleer";
 "YPImagePickerPermissionDeniedPopupGrantPermission" = "Verleen toestemming";

@@ -1,11 +1,13 @@
 "YPImagePickerAlbums" = "البومات";
 "YPImagePickerCancel" = "إلغاء";
+"YPImagePickerMenu" = "قائمة طعام";
 "YPImagePickerCover" = "الغلاف";
 "YPImagePickerCrop" = "قص";
 "YPImagePickerDone" = "تم";
 "YPImagePickerFilter" = "فلتر";
 "YPImagePickerLibrary" = "المكتبة";
 "YPImagePickerNext" = "التالي";
+"YPImagePickerEdit" = "تصحيح";
 "YPImagePickerOk" = "موافق";
 "YPImagePickerPermissionDeniedPopupCancel" = "إلغاء";
 "YPImagePickerPermissionDeniedPopupGrantPermission" = "السماح بالوصول";

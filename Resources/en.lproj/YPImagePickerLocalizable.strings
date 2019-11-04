@@ -1,11 +1,13 @@
 "YPImagePickerAlbums" = "Albums";
 "YPImagePickerCancel" = "Cancel";
+"YPImagePickerMenu" = "Menu";
 "YPImagePickerCover" = "Cover";
 "YPImagePickerCrop" = "Crop";
 "YPImagePickerDone" = "Done";
 "YPImagePickerFilter" = "Filter";
 "YPImagePickerLibrary" = "Library";
 "YPImagePickerNext" = "Next";
+"YPImagePickerEdit" = "Edit";
 "YPImagePickerOk" = "Ok";
 "YPImagePickerPermissionDeniedPopupCancel" = "Cancel";
 "YPImagePickerPermissionDeniedPopupGrantPermission" = "Grant Permission";

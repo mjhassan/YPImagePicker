@@ -1,11 +1,13 @@
 "YPImagePickerAlbums" = "Álbuns";
 "YPImagePickerCancel" = "Cancelar";
+"YPImagePickerMenu" = "Cardápio";
 "YPImagePickerCover" = "Capa";
 "YPImagePickerCrop" = "Redimensionar";
 "YPImagePickerDone" = "Concluir";
 "YPImagePickerFilter" = "Filtro";
 "YPImagePickerLibrary" = "Biblioteca";
 "YPImagePickerNext" = "Avançar";
+"YPImagePickerEdit" = "Editar";
 "YPImagePickerOk" = "OK"; //ignore-same-translation-warning
 "YPImagePickerPermissionDeniedPopupCancel" = "Cancelar";
 "YPImagePickerPermissionDeniedPopupGrantPermission" = "Permitir";

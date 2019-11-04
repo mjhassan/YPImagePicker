@@ -1,11 +1,13 @@
 "YPImagePickerAlbums" = "Galeri";
 "YPImagePickerCancel" = "Batal";
+"YPImagePickerMenu" = "Menu";
 "YPImagePickerCover" = "Sampul";
 "YPImagePickerCrop" = "Sesuaikan";
 "YPImagePickerDone" = "Selesai";
 "YPImagePickerFilter" = "Filter"; //ignore-same-translation-warning
 "YPImagePickerLibrary" = "Perpustakaan";
 "YPImagePickerNext" = "Selanjutnya";
+"YPImagePickerEdit" = "Edit";
 "YPImagePickerOk" = "Oke";
 "YPImagePickerPermissionDeniedPopupCancel" = "Batal";
 "YPImagePickerPermissionDeniedPopupGrantPermission" = "Izinkan";

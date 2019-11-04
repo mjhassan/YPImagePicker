@@ -1,11 +1,13 @@
 "YPImagePickerAlbums" = "앨범";
 "YPImagePickerCancel" = "취소";
+"YPImagePickerMenu" = "메뉴";
 "YPImagePickerCover" = "커버";
 "YPImagePickerCrop" = "자르기";
 "YPImagePickerDone" = "완료";
 "YPImagePickerFilter" = "필터";
 "YPImagePickerLibrary" = "라이브러리";
 "YPImagePickerNext" = "다음";
+"YPImagePickerEdit" = "편집하다";
 "YPImagePickerOk" = "확인";
 "YPImagePickerPermissionDeniedPopupCancel" = "허용 안 함";
 "YPImagePickerPermissionDeniedPopupGrantPermission" = "허용";

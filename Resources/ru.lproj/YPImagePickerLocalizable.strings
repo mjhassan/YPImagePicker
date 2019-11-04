@@ -1,11 +1,13 @@
 "YPImagePickerAlbums" = "Альбомы";
 "YPImagePickerCancel" = "Отмена";
+"YPImagePickerMenu" = "Меню";
 "YPImagePickerCover" = "Обложка";
 "YPImagePickerCrop" = "Обрезка";
 "YPImagePickerDone" = "Готово";
 "YPImagePickerFilter" = "Фильтр";
 "YPImagePickerLibrary" = "Библиотека";
 "YPImagePickerNext" = "Дальше";
+"YPImagePickerEdit" = "редактировать";
 "YPImagePickerOk" = "OK"; //ignore-same-translation-warning
 "YPImagePickerPermissionDeniedPopupCancel" = "Отмена";
 "YPImagePickerPermissionDeniedPopupGrantPermission" = "Настроить разрешения";

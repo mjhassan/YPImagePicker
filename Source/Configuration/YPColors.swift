@@ -55,4 +55,7 @@ public struct YPColors {
     public var progressBarTrackColor: UIColor = UIColor.white
     /// The color of completed track for the progress bar
     public var progressBarCompletedColor: UIColor?
+    
+    // MARK: - Custom
+    public var bottomBarColor: UIColor = UIColor(r: 247, g: 247, b: 247)
 }

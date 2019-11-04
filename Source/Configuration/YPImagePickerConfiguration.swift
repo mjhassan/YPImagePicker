@@ -85,10 +85,18 @@ public struct YPImagePickerConfiguration {
     public var preferredStatusBarStyle = UIStatusBarStyle.default
     
     /// Defines the text colour to be shown when a bottom option is selected
-    public var bottomMenuItemSelectedColour = UIColor(r: 38, g: 38, b: 38)
+    public var bottomMenuItemSelectedColour = UINavigationBar.appearance().tintColor ?? UIColor(r: 38, g: 38, b: 38)
     
     /// Defines the text colour to be shown when a bottom option is unselected
     public var bottomMenuItemUnSelectedColour = UIColor(r: 153, g: 153, b: 153)
+    
+    // Special customization -jahid
+    
+    /// Defines if the back button should be hidden when showing the picker. Default is false.
+    public var hidesBackNavigationButton = false
+    
+    /// Defines completion block for back button. This value will change the back button from "cancel" to "menu". Default is nil.
+    public var backButtonAction: (() -> Void)? = nil
     
     /// List of default filters which will be added on the filter screen
     public var filters: [YPFilter] = [

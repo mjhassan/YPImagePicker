@@ -46,7 +46,7 @@ open class YPPickerVC: YPBottomPager, YPBottomPagerDelegate {
     open override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(r: 247, g: 247, b: 247)
+        view.backgroundColor = YPConfig.colors.bottomBarColor
         
         delegate = self
         
@@ -264,16 +264,20 @@ open class YPPickerVC: YPBottomPager, YPBottomPagerDelegate {
     
     func updateUI() {
         // Update Nav Bar state.
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: YPConfig.wordings.cancel,
-                                                           style: .plain,
-                                                           target: self,
-                                                           action: #selector(close))
+        if !YPConfig.hidesBackNavigationButton {
+            let leftItem = YPConfig.backButtonAction == nil ? YPConfig.wordings.cancel:YPConfig.wordings.menu
+            
+            navigationItem.leftBarButtonItem = UIBarButtonItem(title: leftItem,
+                                                               style: .plain,
+                                                               target: self,
+                                                               action: #selector(close))
+        }
         navigationItem.leftBarButtonItem?.tintColor = YPConfig.colors.tintColor
 
         switch mode {
         case .library:
             setTitleViewWithTitle(aTitle: libraryVC?.title ?? "")
-            navigationItem.rightBarButtonItem = UIBarButtonItem(title: YPConfig.wordings.next,
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title: YPConfig.wordings.edit,
                                                                 style: .done,
                                                                 target: self,
                                                                 action: #selector(done))
@@ -295,6 +299,11 @@ open class YPPickerVC: YPBottomPager, YPBottomPagerDelegate {
     
     @objc
     func close() {
+        if let action = YPConfig.backButtonAction {
+            action()
+            return
+        }
+        
         // Cancelling exporting of all videos
         if let libraryVC = libraryVC {
             libraryVC.mediaManager.forseCancelExporting()
@@ -362,6 +371,15 @@ extension YPPickerVC: YPLibraryViewDelegate {
     public func noPhotosForOptions() {
         self.dismiss(animated: true) {
             self.imagePickerDelegate?.noPhotos()
+        }
+        
+        // castomized, if no photo in library switched to camera
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {[weak self] in
+            if let index = YPConfig.screens.firstIndex(of: .photo),
+                let cvc = self?.cameraVC {
+                self?.startOnPage(index)
+                self?.updateMode(with: cvc)
+            }
         }
     }
 }

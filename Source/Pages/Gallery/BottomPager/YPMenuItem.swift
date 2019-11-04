@@ -29,7 +29,7 @@ final class YPMenuItem: UIView {
     }
     
     func setup() {
-        backgroundColor = .clear
+        backgroundColor = YPConfig.colors.bottomBarColor
         
         sv(
             textLabel,

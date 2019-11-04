@@ -98,6 +98,9 @@ public struct YPImagePickerConfiguration {
     /// Defines completion block for back button. This value will change the back button from "cancel" to "menu". Default is nil.
     public var backButtonAction: (() -> Void)? = nil
     
+    /// Defines if the Library view needs refresh due to PHPhotoLibraryChange. Default is false.
+    public var hasChangedPhotoLibrary = false
+    
     /// List of default filters which will be added on the filter screen
     public var filters: [YPFilter] = [
         YPFilter(name: "Normal", applier: nil),

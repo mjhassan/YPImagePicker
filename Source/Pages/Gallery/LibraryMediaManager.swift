@@ -18,7 +18,6 @@ class LibraryMediaManager {
     internal var imageManager: PHCachingImageManager?
     internal var exportTimer: Timer?
     internal var currentExportSessions: [AVAssetExportSession] = []
-    internal var hasChangedPhotoLibrary: Bool = false
     
     func initialize() {
         imageManager = PHCachingImageManager()
@@ -28,8 +27,6 @@ class LibraryMediaManager {
     func resetCachedAssets() {
         imageManager?.stopCachingImagesForAllAssets()
         previousPreheatRect = .zero
-        hasChangedPhotoLibrary = true
-        print("⚠️ LibraryMediaManager >>> resetCachedAssets")
     }
     
     func updateCachedAssets(in collectionView: UICollectionView) {

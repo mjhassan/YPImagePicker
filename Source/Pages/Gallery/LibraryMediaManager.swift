@@ -29,6 +29,7 @@ class LibraryMediaManager {
         imageManager?.stopCachingImagesForAllAssets()
         previousPreheatRect = .zero
         hasChangedPhotoLibrary = true
+        print("⚠️ LibraryMediaManager >>> resetCachedAssets")
     }
     
     func updateCachedAssets(in collectionView: UICollectionView) {

@@ -494,6 +494,20 @@ public class YPLibraryVC: UIViewController, YPPermissionCheckable {
                 case .audio, .unknown:
                     return
                 case .video:
+                    if !YPConfig.video.applyEdit {
+                        asset.getURL { videoURL in
+                            guard let videoURL = videoURL else { return }
+                            
+                            DispatchQueue.main.async {
+                                self.delegate?.libraryViewFinishedLoading()
+                                let video = YPMediaVideo(thumbnail: thumbnailFromVideoPath(videoURL),
+                                                         videoURL: videoURL, asset: asset)
+                                videoCallback(video)
+                            }
+                        }
+                        return
+                    }
+                    
                     self.checkVideoLengthAndCrop(for: asset, callback: { videoURL in
                         DispatchQueue.main.async {
                             self.delegate?.libraryViewFinishedLoading()
